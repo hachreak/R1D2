@@ -1,6 +1,5 @@
 import datetime as dt
-import itertools as it
-
+from six import itertools as it
 
 def grouper(iterable, n, fillvalue=None):
     args = [iter(iterable)] * n
