@@ -3,7 +3,7 @@ from six import itertools as it
 
 def grouper(iterable, n, fillvalue=None):
     args = [iter(iterable)] * n
-    return it.zip_longest(*args, fillvalue=fillvalue)
+    return it.izip_longest(*args, fillvalue=fillvalue)
 
 
 def today():
